@@ -1,4 +1,4 @@
 js-maps
 =======
 
-proyecto echo con javascript
+proyecto hecho con javascript
