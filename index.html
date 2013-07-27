@@ -24,18 +24,7 @@
 	var map = new google.maps.Map(document.getElementById('map-canvas'),
 				      mapOptions);
 	
-	var contenido = '<div id="content">'+
-	    '<div id="siteNotice">'+
-	    '</div>'+
-	    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-	    '<div id="imagen" style="clear: left">'+
-	    '<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/203304_1769033576_1724429381_s.jpg">'+
-	    '</div>';
-	
-	var infowindow = new google.maps.InfoWindow({
-	    content: contenido
-	});
-	
+	//lo siguiente en un bucle para crear todos los markets	
 	var marker = new google.maps.Marker({
 	    position: myLatlng,
 	    map: map,
@@ -43,7 +32,7 @@
 	});
 	google.maps.event.addListener(marker, 'click', function() {
 	    infowindow.open(map,marker);
-	});/**/
+	});
     }
 
 google.maps.event.addDomListener(window, 'load', initialize);
